@@ -53,7 +53,7 @@
 @media screen and (max-width: 557px)
 {  
     .hero-text-box h1{
-        font-size: 250%;
+        font-size: 200%;
     }
     
     .hero-text-box span{
@@ -89,7 +89,7 @@
         cursor: pointer;
         border-radius: 5px;
         border: 1px solid #000;
-        margin: 0 3px;
+        margin: 0;
     }
 }
 
