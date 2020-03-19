@@ -1,0 +1,685 @@
+/*====================================
+    Templete Name: Paul Lapkin
+    Templete URI: 
+    Despriction: An awesome html portfolio Templete.
+    Author: Roman
+    Autohr URI: 
+    Support: romancse247@gmail.com
+    Version: 1.0.0
+=====================================*/
+
+/*====================================
+   CSS INDEX:
+    1. COMMON CSS
+    2. REUSEABLE CSS
+    3. HERO 
+    4. ABOUT 
+    5. WORKING PROCESS
+    6. EXPERENCE AND EDUCATION
+    7. PORTFOLIO 
+    8. TESTIMONIAL
+    9. CONTACT
+    10. Footer
+=====================================*/
+
+
+/*====================================
+            1.COMMON CSS
+=====================================*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background: #fff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility; 
+}
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+/*=========================================
+            2. RESUABLE COMPONENT
+===========================================*/
+
+.row,
+.hero-text-box{
+    max-width: 1180px;
+    margin: auto;
+}
+
+section{
+    padding: 120px 0;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h3{
+    font-size: 400%;
+    font-weight: 700
+}
+
+.section-title p{
+    font-size: 160%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+h1{
+    font-family: 'raleway', 'sans-serif';
+    font-size: 650%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.btn:link,
+.btn:visited,
+.btn{
+    font-size: 160%;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid #000;
+}
+
+/*====================================
+             3. HERO CSS
+=====================================*/
+
+#hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(img/hero.jpg) no-repeat center / cover;
+    height: 100vh;
+}
+
+.logo{
+  margin-top: 45px; 
+  height: 45px;
+}
+
+.nav-icon{
+    float: right;
+    margin-top: 45px;
+}
+
+.nav-icon i{
+    color: #fff;
+    font-size: 300%;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.hero-text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+h1::before{
+    content: '';
+    display: block;
+    border: 2px solid #fff;
+}
+
+h1::after{
+    content: '';
+    display: block;
+    border: 2px solid #fff;  
+}
+
+.hero-text-box span{
+    font-size: 250%;
+}
+
+/* HAMBURGER MENU */
+
+.menu-container{
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 9999;
+    transition: .5s;
+}
+
+.menu-items{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.menu-items ul li{
+    
+}
+
+.menu-items ul li a{
+    color: #fff;
+    font-size: 300%;
+    text-transform: uppercase;
+    margin: 10px 0;
+    display: inline-block;
+    transition: .5s;
+}
+
+.menu-items ul li:hover a{
+    color: #ff2b4a;
+}
+
+.close-btn{
+    position: absolute;
+    top: 45px;
+    right: 45px;
+    cursor: pointer;
+}
+
+.close-btn i{
+    color: #fff;
+    font-size: 300%;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+}
+
+/*STICKY MENU*/
+
+nav.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    z-index: 9999;   
+}
+
+.sticky .logo,
+.sticky .nav-icon{
+    margin-top: 20px;  
+}
+
+
+
+
+
+
+/*====================================
+             4.ABOUT CSS
+=====================================*/
+
+#about-paul{
+    
+}
+
+.grid-about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+}
+
+.paul{
+    width: 100%;
+    height: 400px;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.about-paul-item h2{
+    font-size: 180%;
+    font-weight: 700
+    margin-top: 200px;
+}
+
+.about-paul{
+    font-size: 160%;
+    padding: 30px 0;
+    text-align: justify;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background: #ff2b4a;
+    border-color: #ff2b4a;
+}
+
+.btn-full:hover{
+    background: transparent;
+    color: #ff2b4a;
+}
+
+/*Skill Box*/
+
+.my-skill{
+   font-size: 160%;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+
+.skill-box{
+    
+}
+
+.skill-box:nth-child(3){
+    margin: 30px 0;
+}
+    
+
+.skill-box p{
+    font-size: 160%;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.skill-box p:nth-child(2){
+    float: right;
+    margin-top:  -30px;
+}
+
+.skill{
+    border: 1px solid #ff2b4a;
+    padding: 10px;
+}
+
+.skill-bar{
+    background: #ff2b4a;
+    height: 10px;
+}
+
+/*ANIMATION */
+
+.html5{
+    animation: html5 1s;
+}
+
+.css3{
+    animation: css3 1s;
+}
+
+.wordpress{
+    animation: wordpress 1s;
+}
+
+@keyframes html5{
+    0%{
+        width: 0%;
+    }
+    
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes css3{
+    0%{
+        width: 0%;
+    }
+    
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes wordpress{
+    0%{
+        width: 0%;
+    }
+    
+    100%{
+        width: 90%;
+    }
+}
+
+.nested-grid-about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;;
+}
+.nested-grid-about-items{
+    font-size: 160%;
+}
+
+
+/*====================================
+        5.Working Process 
+=====================================*/
+
+#working-process{
+    text-align: center;
+    background: #e6e6e6;
+}
+
+.grid-working-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.design{
+    background: #10c6fc;
+    color: #fff;
+    padding: 80px 0; 
+}
+
+.development{
+    background: #835aeb;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.testing{
+    background: #002453;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.launce{
+    background: #ff2b4a;
+    color: #fff;
+    padding: 80px 0;
+}
+
+h4{
+    font-size: 160%;
+    margin-top: 20px;
+}
+
+/*====================================
+       6.Education and Experience
+=====================================*/
+
+#work-experience-education{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../img/man.jpg') no-repeat center / cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.work-ex-edu-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.work-ex-edu-items{
+    background-color: #4c4b5b;
+    padding: 60px 30px;
+}
+
+.work-ex-edu-items h3{
+    font-size: 260%;
+}
+
+.work-ex-edu-items h4{
+    font-size: 180%;
+}
+
+.work-ex-edu-items span{
+    font-size: 160%;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.work-ex-edu-items p{
+    font-size: 160%;
+}
+
+hr{
+    width: 100%;
+    margin-top: 10px;
+    color: #fff;
+}
+
+/*====================================
+         7.PORTFOLIO 
+=====================================*/
+
+#portfolio{
+    
+}
+
+.portfolio-filter{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn{
+    background: #000;
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 160%;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin: 0 10px;
+}
+
+.grid-portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(250px, auto);
+    grid-gap: 10px;
+}
+
+.grid-portfolio-items{
+    background-color: #000;
+}
+
+.grid-portfolio-items:nth-child(5){
+    grid-column: 1/3;
+}
+
+.grid-portfolio-items:nth-child(1){
+    background: url('../img/ph1.jpg')no-repeat center / cover;
+    cursor: pointer;
+}
+
+.grid-portfolio-items:nth-child(2){
+    background: url('../img/ph2.jpg')no-repeat center / cover;
+    cursor: pointer;
+}
+.grid-portfolio-items:nth-child(3){
+    background: url('../img/ph3.jpg')no-repeat center / cover;
+    cursor: pointer;
+}
+
+.grid-portfolio-items:nth-child(4){
+    background: url('../img/ph5.jpg')no-repeat center / cover;
+    cursor: pointer;
+}
+
+.grid-portfolio-items:nth-child(5){
+    background: url('../img/ph4.jpg')no-repeat center / cover;
+    cursor: pointer;
+}
+
+.grid-portfolio-items:nth-child(6){
+    background: url('../img/ph6.jpg')no-repeat center / cover;
+    cursor: pointer;
+}
+
+.grid-portfolio-items:nth-child(7){
+    background: url('../img/ph7.jpg')no-repeat center / cover;
+    cursor: pointer;
+}
+
+#portfolio .mixitup-control-active{
+    background: transparent;
+    color: #000;
+}
+
+/*====================================
+         8.TESTIMONIAL 
+=====================================*/
+
+#testimonial{
+    background: linear-gradient(rgba(100, 203, 192, 0.7), rgba(100, 203, 192, 0.7)) ,url('../img/testimonial.jpg') no-repeat center top / cover;
+    background-attachment: fixed;
+}
+
+.grid-testimonial-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.quote{
+    height: 35px;
+}
+
+.quote-contant{
+    font-size: 160%;
+    margin: 30px 0;
+}
+
+
+/*====================================
+         9.CONTACT 
+=====================================*/
+
+#contact{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url('../img/man.jpg') no-repeat center / cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+
+.grid-contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.grid-contact-items:nth-child(1){
+    background: rgba(0, 0, 0, 0.7);
+    padding: 45px 30px;
+}
+
+.grid-contact-items h3{
+    font-size: 260%;
+}
+
+.single-form{
+
+}
+
+.single-form input[type="text"],
+.single-form input[type="email"],
+.single-form input[type="message"],
+.single-form textarea{
+    
+    padding: 15px 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 140%;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.nested-grid-contact-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+}
+
+.nested-grid-contact-items{
+    background: rgba(0, 0, 0, 0.7);
+    padding: 45px 30px;  
+}
+
+.grid-contact-container h3,
+.nested-grid-contact-container h3{
+    margin-bottom: 30px;
+}
+
+.nested-grid-contact-items p{
+    font-size: 160%;
+}
+
+.single-btn-from{
+    text-align: right;
+    margin-top: 20px;
+}
+
+.btn-full{
+    background: #ff2b4a;
+    border-color: #ff2b4a;
+    cursor: pointer;
+}
+
+.btn-full:hover{
+    background: transparent;
+    color: #ff2b4a;
+}
+
+
+/*====================================
+         10.FOOTER SECTION
+=====================================*/
+
+#footer{
+    padding: 60px 0;
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.social-icon{
+   margin-bottom: 20px; 
+}
+
+.social-icon ul li{
+    display: inline-block;
+}
+
+.social-icon ul li a{
+    color: #fff;
+    font-size: 25px;
+    border-right: 2px solid #fff;
+    padding: 0 15px;
+    transition: .5s;
+}
+
+.social-icon ul li a:hover{
+    color: #ff2b4a;
+}
+
+
+.copyright{
+    font-size: 140%;
+    color: #fff;
+}
+
